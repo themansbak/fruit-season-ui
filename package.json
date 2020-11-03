@@ -19,10 +19,12 @@
     "typescript": "3.8.3"
   },
   "scripts": {
+    "dev": "react-scripts start",
     "start": "serve -s build",
-    "build": "npm install && react-scripts build",
+    "build": "npm install && npm install --save serve && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "browserslist": [
     ">0.2%",
