@@ -1,5 +1,5 @@
 import { getData, getRes } from "./calls";
-export const BASE_URI = `${window.location.protocol}//${window.location.hostname}:3001`;
+export const BASE_URI = 'https://stormy-reef-43017.herokuapp.com';
 export const ALL_STATES = `${BASE_URI}/states`;
 export const ALL_SEASONS = `${BASE_URI}/seasons`;
 const seasons_path = "/seasons";
