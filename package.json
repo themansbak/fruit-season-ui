@@ -19,7 +19,7 @@
     "typescript": "3.8.3"
   },
   "scripts": {
-    "start": "serve --save build",
+    "start": "serve -s build",
     "build": "npm install && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
