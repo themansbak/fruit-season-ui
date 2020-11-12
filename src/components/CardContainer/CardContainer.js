@@ -9,7 +9,7 @@ export const CardContainer = React.memo(() => {
   return (
     <ul>
       {produceList.map((produce) => {
-        return <Card obj={produce.name} key={produce.id} />;
+        return <Card obj={produce} key={produce.id} />;
       })}
     </ul>
   );
