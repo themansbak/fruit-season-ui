@@ -4,11 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSeedling } from "@fortawesome/free-solid-svg-icons";
 
 export const Card = React.memo((props) => {
-  let name = props.obj;
-  let [description, setDescription] = useState(props.obj.description);
-  let [image, setImage] = useState(
-    "https://i.pinimg.com/originals/32/e2/41/32e2413585f1d2e0333c7dee3c4808bf.jpg"
-  );
+  let name = props.obj.name;
+  let description = props.obj.description;
+  let image = props.obj.image;
 
   return (
     <li id="card-div">
